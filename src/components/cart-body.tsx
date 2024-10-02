@@ -155,7 +155,7 @@ export function CartBody({ users, setUsers }: Props) {
               zIndex: { duration: 0 },
               height: { duration: 0.5 } 
             }}
-            className="absolute left-0 h-8 bg-white shadow flex gap-1 overflow-hidden items-center pr-6"
+            className="absolute no-underline left-0 h-8 bg-white shadow flex gap-1 overflow-hidden items-center pr-6"
           >
             <motion.div
               initial={{ width: 28, height: 28}}

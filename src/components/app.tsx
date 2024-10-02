@@ -18,13 +18,12 @@ export default function App() {
   return (
     <section className="h-dvh w-full flex flex-col justify-center items-center">
           
-      {/* card  */}
       <motion.article 
         layout
         initial={{ height: 176 }}
         animate={{ height: cardIsOpen ? 'auto' : 176 }}
         transition={{ duration: 0.15 }}
-        className={`px-5 w-96 rounded-lg bg-white shadow shadow-gray-300 overflow-hidden`}
+        className={`px-5 w-80 md:w-96 rounded-lg bg-white shadow shadow-gray-300 overflow-hidden`}
       >
         <CartHeader cardIsOpen={cardIsOpen} setCardIsOpen={setCardIsOpen} />
         <CartBody users={users} setUsers={setUsers} />
